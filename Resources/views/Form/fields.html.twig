@@ -1,0 +1,6 @@
+{% use "form_div_layout.html.twig" %}
+
+{% block bs_static_raw_widget %}
+    {% set attr = attr|merge({ 'class': (attr.class|default('') ~ ' form-control-static')|trim }) %}
+    <p id="{{ id }}" {%- for attrname, attrvalue in attr %} {{ attrname }}="{{ attrvalue }}"{% endfor %}>{{ value|raw }}</p>
+{% endblock %}

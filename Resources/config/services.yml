@@ -1,0 +1,5 @@
+services:
+    glavweb_core.form.type.form_static_control_raw:
+        class: GlavwebCoreBundle\Form\Type\FormStaticControlRawType
+        tags:
+            - { name: form.type, alias: bs_static_raw }
