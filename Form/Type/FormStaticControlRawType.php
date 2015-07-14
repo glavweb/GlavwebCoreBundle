@@ -1,6 +1,6 @@
 <?php
 
-namespace GlavwebCoreBundle\Form\Type;
+namespace Glavweb\CoreBundle\Form\Type;
 
 use Braincrafted\Bundle\BootstrapBundle\Form\Type\FormStaticControlType;
 use Symfony\Component\Form\AbstractType;

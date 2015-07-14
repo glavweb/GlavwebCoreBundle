@@ -1,6 +1,6 @@
 <?php
 
-namespace Glavweb\GlavwebCoreBundle;
+namespace Glavweb\CoreBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
