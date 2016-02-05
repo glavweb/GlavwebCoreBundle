@@ -3,3 +3,21 @@ services:
         class: Glavweb\CoreBundle\Form\Type\FormStaticControlRawType
         tags:
             - { name: form.type, alias: bs_static_raw }
+
+    glavweb_core.api_token_authenticator:
+        class:     Glavweb\CoreBundle\Security\Authorization\ApiTokenAuthenticator
+        arguments: [@doctrine]
+
+    glavweb_core.security.access.owner_voter:
+        class:      Glavweb\CoreBundle\Security\Authorization\Voter\OwnerVoter
+        public:     false
+        tags:
+           - { name: security.voter }
+
+    glavweb_core.security.access.super_admin_voter:
+        class:      Glavweb\CoreBundle\Security\Authorization\Voter\SuperAdminVoter
+        public:     false
+        tags:
+           - { name: security.voter }
+
+
