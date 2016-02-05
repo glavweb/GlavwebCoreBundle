@@ -2,7 +2,7 @@
 
 namespace Glavweb\CoreBundle\Security\Authorization\Voter;
 
-use Sonata\UserBundle\Model\HasOwnerInterface;
+use Glavweb\CoreBundle\Security\HasOwnerInterface;
 use Symfony\Component\Security\Core\Authentication\Token\TokenInterface;
 use Symfony\Component\Security\Core\Authorization\Voter\VoterInterface;
 use Symfony\Component\Security\Core\User\UserInterface;
@@ -40,7 +40,7 @@ class OwnerVoter implements VoterInterface
     public function supportsClass($class)
     {
         $reflectionClass = new \ReflectionClass($class);
-        return $reflectionClass->implementsInterface('Sonata\UserBundle\Model\HasOwnerInterface');
+        return $reflectionClass->implementsInterface('Glavweb\CoreBundle\Security\HasOwnerInterface');
     }
 
     /**
