@@ -17,7 +17,6 @@ class FormStaticControlRawType extends AbstractType
     public function setDefaultOptions(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'mapped'   => false,
             'required' => false,
             'disabled' => true,
         ));
