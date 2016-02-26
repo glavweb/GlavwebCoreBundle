@@ -4,7 +4,7 @@ namespace Glavweb\CoreBundle\Mapping\Annotation;
 
 /**
  * Class ImagineFilters
- * @package Glavweb\UploaderBundle\Mapping\Annotation
+ * @package Glavweb\CoreBundle\Mapping\Annotation
  *
  * @Annotation
  * @Target({"PROPERTY"})
