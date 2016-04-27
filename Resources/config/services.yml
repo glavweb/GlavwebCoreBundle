@@ -6,7 +6,7 @@ services:
 
     glavweb_core.api_token_authenticator:
         class:     Glavweb\CoreBundle\Security\Authorization\ApiTokenAuthenticator
-        arguments: [@doctrine]
+        arguments: ["@doctrine"]
 
     glavweb_core.security.access.owner_voter:
         class:      Glavweb\CoreBundle\Security\Authorization\Voter\OwnerVoter
@@ -19,5 +19,3 @@ services:
         public:     false
         tags:
            - { name: security.voter }
-
-
