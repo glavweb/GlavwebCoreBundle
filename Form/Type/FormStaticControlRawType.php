@@ -29,4 +29,12 @@ class FormStaticControlRawType extends AbstractType
     {
         return 'bs_static_raw';
     }
+    
+    /**
+     * Compatibility with Symfony 2
+     */
+    public function getName()
+    {
+        return 'bs_static_raw';
+    }    
 }
